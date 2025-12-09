@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script-bank.js" defer></script>
+    <title>Bank</title>
+  </head>
+  <body>
+    <section id="create">
+      <label
+        >New user name:
+        <input type="text" id="name" />
+      </label>
+      <div class="buttonContainer">
+        <button onclick="createNewAccount()">Create New Account</button>
+        <!-- <button id="showAccounts">Show All Accounts</button> -->
+      </div>
+      <ul id="accountsList"></ul>
+    </section>
+    <section id="change">
+      <label
+        >Account number:
+        <input type="text" id="accountNumber" />
+      </label>
+      <label
+        >Sum:
+        <input type="number" id="amount" />
+      </label>
+      <div class="buttonContainer">
+        <button id="withdraw">-</button>
+        <button id="deposit">+</button>
+      </div>
+    </section>
+  </body>
+</html>
